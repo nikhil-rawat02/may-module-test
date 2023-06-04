@@ -69,6 +69,7 @@ function saveSearch(data){
         const arr = [];
         arr.push(data);
         localStorage.setItem("searches", JSON.stringify(arr));
+        addSearchToHistory(data.date);
     }else{
         let insert = true;
          localData.forEach((item) => {
