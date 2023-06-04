@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>NASA</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="left">
+                <img src="https://wallpaperaccess.com/full/1094567.jpg" alt="">
+                <span>NASA Image</span>
+        </div>
+        <div class="right">
+            <a href="#current-image-container"> Image Galary</a>
+            <a href="#search-form">Search By date</a>
+            <a href="#search-history">History</a>
+        </div>
+    </div>
+    <h1>Welcome to NASA Image Galary</h1>
+    <section id="current-image-container">
+        <h1></h1>
+        <img src="" alt="">
+        <h2></h2>
+        <p></p>
+    </section>
+
+    <form id="search-form" onsubmit="getImageOfTheDay(event)">
+        <h2>Search for Picture of the day</h2>
+        <input type="date" id="search-input">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="search">
+        <h1>Previous Searches</h1>
+        <ol id="search-history">
+        </ol>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
