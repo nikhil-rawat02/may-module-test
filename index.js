@@ -1,7 +1,7 @@
 // addSearchToHistory(): This function should add the date to the search history list in the Ui. You need to get the searches array from localstorage and display it as an unordered list in the ui.
 
 // https://api.nasa.gov/planetary/apod?date=${date}&api_key=${your_api_key}
-const apiKey = "TQ80WiSehomG6HDRajfaOZdkBAyZA4TWbq2xHH2W";
+const apiKey = "bXyKkWLxhMUpfaaGVxWvnOyQCaXi3zj2xAdphL42";
 const inputDate = document.getElementById("search-input");
 const currentImageContainer = document.getElementById("current-image-container");
 const list = document.getElementById("search-history");
